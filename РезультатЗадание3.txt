@@ -1,0 +1,7 @@
+		№	Серия	Наименование	Дополнение
+		0	Задание(string)	ЉµЉ(string)		1787_-_?(string)
+		1	677492(long)	12Тм_54(string)		Допол(string)
+		1	Привет(string)	76(short)		1з(string)
+		2	Тестовое(string)-=-=-=(string)		СимволыИлиНет?(string)
+		7	654(short)	Это(string)		Твоё(string)
+		2147483747Удачи(string)	На_полях(string)	Правосудия(string)
