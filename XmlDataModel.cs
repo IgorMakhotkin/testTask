@@ -13,13 +13,22 @@ public class XmlDataModel
     public SchemaVersion SchemaVersion { get; set; } = new SchemaVersion();
     public static Task<string> SerializationToString(XmlDataModel request)
     {
+        XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+        ns.Add("", "");
+        var xmlWriterSettings = new XmlWriterSettings
+        {
+            Indent = true,
+            OmitXmlDeclaration = false,
+            Encoding = Encoding.GetEncoding(1251)
+        };
+        var win1251 = Encoding.GetEncoding(1251);
         XmlSerializer serializer = new XmlSerializer(typeof(XmlDataModel));
         string requestString = " ";
         MemoryStream memStream = new MemoryStream();
-        serializer.Serialize(XmlWriter.Create(memStream), request);
+        serializer.Serialize(XmlWriter.Create(memStream, xmlWriterSettings), request, ns);
         memStream.Flush();
         memStream.Seek(0, SeekOrigin.Begin);
-        requestString = Encoding.UTF8.GetString(memStream.ToArray());
+        requestString = win1251.GetString(memStream.ToArray());
         return Task.FromResult(requestString);
     }
 }

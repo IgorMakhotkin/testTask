@@ -13,7 +13,7 @@ namespace TestTask
             var win1251 = Encoding.GetEncoding(1251);
 
 
-            using (TextFieldParser parser = new TextFieldParser(@"C:\repo\testTask\Задание3.txt", win1251))
+            using (TextFieldParser parser = new TextFieldParser(@"Задание3.txt", win1251))
             {
 
                 parser.SetDelimiters("\t");
@@ -27,7 +27,7 @@ namespace TestTask
                 NumberComparer nc = new NumberComparer();
                 text.Sort(nc);
                 var result = CellDataType(text);
-                using (StreamWriter writer = new StreamWriter(@"C:\repo\testTask\РезультатЗадание3.txt", true))
+                using (StreamWriter writer = new StreamWriter(@"РезультатЗадание3.txt", true))
                 {
                     foreach (var item in result)
                     {

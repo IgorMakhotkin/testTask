@@ -12,7 +12,7 @@ public class Test4
     public async Task FromExcelFileAsync()
     {
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-        var filePath = @"C:\repo\testTask\ФайлСИсходнымиДанными.xlsx";
+        var filePath = @"ФайлСИсходнымиДанными.xlsx";
         var responseModel = new XmlDataModel();
         using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
         {
