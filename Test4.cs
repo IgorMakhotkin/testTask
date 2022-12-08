@@ -149,15 +149,15 @@ public class Test4
                 {
                     if (dataSum.TryGetValue(px.Num, out var pxValue))
                     {
-                        Decimal.TryParse(px.Value, out var decimalPxValue);
-                        pxValue += decimalPxValue;
+                        Decimal.TryParse(px.Value.Replace('.',','), out var decimallPxValue);
+                        pxValue += decimallPxValue;
                         dataSum.Remove(px.Num);
                         dataSum.Add(px.Num, pxValue);
                     }
                     else
                     {
-                        Decimal.TryParse(px.Value, out var decimalPxValue);
-                        dataSum.Add(px.Num, decimalPxValue);
+                        Decimal.TryParse(px.Value.Replace('.',','), out var decimallPxValue);
+                        dataSum.Add(px.Num, decimallPxValue);
                     }
                 }
 
@@ -168,7 +168,7 @@ public class Test4
         {
             var px = new Px();
             px.Num = pxValue.Key;
-            px.Value = pxValue.Value.ToString();
+            px.Value = pxValue.Value.ToString("0.00").Replace(',','.');
             sumPxValue.Add(px);
         }
         data.Px = sumPxValue;

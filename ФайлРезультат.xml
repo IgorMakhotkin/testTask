@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <RootXml>
   <SchemaVersion Number="2">
-    <Period Date="07.12.2022">
+    <Period Date="08.12.2022">
       <Source ClassCode="ДМС" Code="819">
         <Form Code="178" Name="Счета в кредитных организациях" Status="0">
           <Column Num="1" Name="Номер банковского (лицевого) счета" />
@@ -32,10 +32,10 @@
               <Px Num="5" Value="1.00" />
             </Data>
             <Data СТРОКА="960">
-              <Px Num="2" Value="0" />
-              <Px Num="3" Value="0" />
-              <Px Num="4" Value="0" />
-              <Px Num="5" Value="0" />
+              <Px Num="2" Value="8083.00" />
+              <Px Num="3" Value="51.00" />
+              <Px Num="4" Value="177.00" />
+              <Px Num="5" Value="458.00" />
             </Data>
           </Document>
           <Document ПлСч11="120121000">
@@ -47,10 +47,10 @@
               <Px Num="5" Value="120.00" />
             </Data>
             <Data СТРОКА="960">
-              <Px Num="2" Value="0" />
-              <Px Num="3" Value="0" />
-              <Px Num="4" Value="0" />
-              <Px Num="5" Value="0" />
+              <Px Num="2" Value="123.00" />
+              <Px Num="3" Value="4.00" />
+              <Px Num="4" Value="678.00" />
+              <Px Num="5" Value="120.00" />
             </Data>
           </Document>
           <Document ПлСч11="120122000">
@@ -76,10 +76,10 @@
               <Px Num="5" Value="5.00" />
             </Data>
             <Data СТРОКА="960">
-              <Px Num="2" Value="0" />
-              <Px Num="3" Value="0" />
-              <Px Num="4" Value="0" />
-              <Px Num="5" Value="0" />
+              <Px Num="2" Value="7905.00" />
+              <Px Num="3" Value="453.00" />
+              <Px Num="4" Value="78.00" />
+              <Px Num="5" Value="118.00" />
             </Data>
           </Document>
         </Form>
